@@ -1,0 +1,154 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Azraf Anwar</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+        <style>
+            body {
+                width: 100%;
+                height: 100%;
+                font-family: Consolas, monaco, monospace;
+                padding: 0;
+                margin: 0;
+                background-color: #FFF8C1;
+                }
+            .name {
+                font-size: 36px;
+                text-align: center;
+                padding-top: 3%;
+                }
+            .blurb {
+                text-align: center;
+                outline: none;
+                font-size: 18px;
+                font-family: Consolas, monaco, monospace;
+            }
+            .collapsible {
+                background-color: #FFA47A;
+                color: white;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                height: 100%;
+                border: none;
+                text-align: center;
+                outline: none;
+                font-size: 24px;
+                font-family: Consolas, monaco, monospace;
+                }
+            .active, .collapsible:hover {
+                background-color: #E8A76F;
+                }
+            .content {
+                padding: 0 18px;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+                background-color: #FFF8C1;}
+            .links {
+                text-align: center;
+                }
+        </style>
+    </head>
+
+    <body>
+        <div class="name">
+            <u>Azraf Anwar</u>
+            <br>
+        </div>
+        <div class="blurb">
+            <p>
+                I'm a New York based graduate student exploring machine learning and its myriad applications.
+            </p>
+        </div>
+        <div>
+            <button class="collapsible">About Me</button>
+            <div class="content">
+                <p>I am currently a graduate student at <strong>New York University</strong> pursuing a <strong>Master's Degree in Computer Science</strong>. 
+                   As an undergraduate student, I studied <strong>Biomedical Engineering</strong> at <strong>Columbia University</strong> and developed a passion for machine learning, data visualization and computational modeling. 
+                   I am passionate about discovering new ways to apply machine learning frameworks such as GANs and CNNs to solve real-world problems. 
+                   <br><br>
+                   You can find my one page resume 
+                   <a href="online_resume.pdf" target=”_blank”>here</a>, 
+                   or my full curriculum vitae 
+                   <a href="azraf_anwar_cv.pdf" target=”_blank”>here</a>. 
+                   I look forward to hearing from you!
+                   <br><br>
+                </p>
+            </div>
+
+            <button class="collapsible">About My Past Academic and Professional Experience</button>
+            <div class="content">
+                <p><strong><u>Research at Columbia University</u></strong></p> <br>
+                <p><strong><u>Research at the Icahn School of Medicine at Mount Sinai</u></strong></p> <br>
+                <p><strong><u>Work Experience at CipherHealth</u></strong></p> <br>
+                <p><strong><u>Research in Bangladesh and combatting COVID19</u></strong></p> <br>
+            </div>
+
+            <button class="collapsible">About My Current Projects</button>
+            <div class="content">
+                <p>I am currently working with the <strong>AI for Scientific Research</strong> team at New York University.
+                   For additional information on the research team, please see
+                   <a href="https://engineering.nyu.edu/research/vertically-integrated-projects/vip-teams/ai-scientific-research" target=”_blank”>here</a>,
+                   and for additional information on the Vertically Integrated Projects program, please see
+                   <a href="https://engineering.nyu.edu/research/vertically-integrated-projects" target=”_blank”>here</a>. 
+                   <br><br>
+                   In my spare time, I am also concurrently working on a project leveraging NLP for news article summarization,
+                   as well as a project leveraging GANs to produce novel abstract art. 
+                   Finally, I'm also exploring the applications of UI/UX in encouraging calmer moods and creativity. 
+                   Please 
+                   <a href="mailto:aa8542@nyu.edu" target=”_blank”>contact me</a>
+                   to find out more!
+                   <br><br>
+                </p>
+            </div>
+
+            <button class="collapsible">About This Site and Color Harmonies</button>
+            <div class="content">
+                <p>I've set aside this section to give a very cool webtool a quick plug. 
+                   I've recently become a pretty strong proponent of minimalism in web design.
+                   I believe there are two strong draws to using minimalism as a design principle. You get to
+                   leverage negative space and apply sharp contrasts.
+                   <br><br>
+                   These tools become even stronger when you apply color theory - color harmony rules provide a very 
+                   powerful way to engage your audience and elicit positive subconscious responses from the get-go.
+                   I've only recently become aware of this topic as I've started to explore GANs and their intersection
+                   with art.
+                   <br><br>
+                   If you enjoy the way this site is set up, please check out 
+                   <a href="https://color.adobe.com/create/color-wheel" target=”_blank”>Adobe Color</a> 
+                   to explore color harmonies.
+                   <br><br>
+                </p>
+            </div>
+
+            <button class="collapsible">Contact Me</button>
+            <div class="content">
+                <p class="links">
+                    Connect with me at: <br><br>
+                    <a href="https://www.linkedin.com/in/azraf-anwar">LinkedIn</a> <br><br>
+                    <a href="mailto:aa8542@nyu.edu">aa8542@nyu.edu</a> <br><br>
+                    <a href="mailto:aa3641@nyu.edu">aa3641@columbia.edu</a> <br><br>
+                </p>
+            </div>
+        </div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                } 
+              });
+            }
+        </script>
+    </body>
+</html>
