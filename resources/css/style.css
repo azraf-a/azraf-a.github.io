@@ -89,3 +89,51 @@ header {
     border: 2px solid #353b48;
     transition: background-color ease-in-out 0.3s, border ease-in-out 0.3s;;
 }
+
+nav{
+    background-color: #353b48;
+    opacity: 30%;
+}
+
+.logo{
+    margin: 5px 0;
+    height:75px;
+    width:auto;
+    float:left;
+}
+
+.main-nav{
+    float:right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.main-nav li{
+    display:inline-block;
+    margin-left: 20px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #dcdde1;
+    text-decoration: none;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-weight: 300;
+    font-size: 75%;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-weight: 300;
+    font-size: 75%;
+    border-bottom: 2px white solid;
+    padding-bottom: 2px;
+    transition: border-bottom 0.2s;
+}
