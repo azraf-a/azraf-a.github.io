@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
 
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
@@ -12,6 +13,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
         
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
         <title>Azraf Anwar</title>
     </head>
 
@@ -19,9 +22,10 @@
         <header>
             <nav>
                 <div class="row">
-                    <img src="resources/css/img/logo-white.png" alt="Azraf_Logo" class="logo"/>
+
+                    <img src="resources/css/img/logo-white.png" alt="Azraf_Logo" class="logo" style="margin-left: 20px;"/>
                     <ul class="main-nav">
-                        <li>    <a href="#">About Me</a>    </li>
+                        <li>    <a href="#AboutMe">About Me</a>    </li>
                         <li>    <a href="#">Experience</a>  </li>
                         <li>    <a href="#">Projects</a>    </li>
                         <li>    <a href="#">Resume</a>      </li>
@@ -30,14 +34,55 @@
                 </div>
             </nav>
             <div class = "header-text-box">
-                <h1>Hi, I'm Azraf Anwar.</h1>
+                <h1> Hi, I'm Azraf Anwar.</h1>
                 <p>I'm a software engineer, based in New York City, <br> passionate about data science and machine learning. </p>
                 <a class = "btn btn-full" href="#">Learn More</a>
                 <a class = "btn btn-ghost" href="#">Contact Me</a>
             </div>
-
         </header>
 
+        <section class="AboutMe" id="AboutMe">
+            <div class="row">
+                <div class="col span-1-of-2 content">
+                    <h2> About Me </h2>
+                    <p> 
+                        Hello! My name is Azraf Anwar. I'm a software engineer
+                        and researcher based in New York City. <br><br>
+    
+                        After graduating from Columbia University, I've worked at a number of places
+                        across the healthtech and research industries. <br><br>
+                        
+                        I've recently shifted my focus towards developing meaningful
+                        web applications leveraging AI/ML for creative expression. I'm
+                        currently pursuing a Master's degree in Computer Science
+                        at New York University. <br><br>
+
+                        Here are a few tools I've been working with lately:
+                        <ul class="skill-list">
+                            <li>    Tensorflow & Keras  </li>
+                            <li>    PyTorch             </li>
+                            <li>    mlpack              </li>
+                            <li>    SQL                 </li>
+                            <li>    HTML & CSS          </li>
+                            <li>    jQuery              </li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="col span-1-of-2">
+                    <div class="box">
+                        <img src="resources/css/img/personal-img.jpg" alt="Page Author Image" class="Author">
+                    </div>
+                    <div>                   
+                        <ul class="media-nav">
+                            <li> <a href="https://www.linkedin.com/in/azraf-anwar" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>        </li>
+                            <li> <a href="https://twitter.com/man_of_cookies" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>         </li>
+                            <li> <a href="https://www.instagram.com/azrafanwar/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>       </li>
+                            <li> <a href="#" target="_blank"><ion-icon name="logo-github" ></ion-icon></a>          </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 
 </html>
